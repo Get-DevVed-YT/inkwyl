@@ -54,7 +54,7 @@ export default function Home({ stories, users, comments }) {
           </Link>
      </div>
            <div className="navbar">
-     <Link href="/" shallow>
+     <Link href="/">
      Home&nbsp;&#32;
      </Link>
      <Link href="/editor">
@@ -69,7 +69,7 @@ export default function Home({ stories, users, comments }) {
              
                 {loggedIn && (
         <>
-        <Link shallow href={data.link}>Profile&#32;</Link>
+        <Link href={data.link}>Profile&#32;</Link>
           <a href="/"
             onClick={() => {
               cookie.remove('token');
