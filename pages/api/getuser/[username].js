@@ -9,7 +9,7 @@ const client = new MongoClient(url, {
   useUnifiedTopology: true,
 });
 
-function findUserbyId(db, userId, callback) {
+function findUserbyName(db, username, callback) {
   const collection = db.collection('users');
   collection.findOne({userId}, callback);
 }
@@ -25,10 +25,10 @@ export default (req, res) => {
       assert.equal(null, err);
       console.log('Connected to MongoDB server =>');
       const db = client.db(dbName);
-      const { userId } = req.query;
-      console.log(userId);
+      let { username } = req.query;
+      console.log(username);
 
-      findUserbyId(db, userId, function(err, user) {
+      findUserbyName(db, username, function(err, user) {
         if (err) {
           res.status(500).json({error: true, message: 'Error finding User'});
           return;
@@ -37,7 +37,7 @@ export default (req, res) => {
           res.status(404).json({error: true, message: 'User not found'});
           return;
         } else {
-          const username = user.username
+          let username = user.username
           const bio = user.bio
           const userlink = user.userLink
           var verified
