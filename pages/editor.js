@@ -81,7 +81,7 @@ const Editor = () => {
 				.then(data => {
 					if (data && data.succeeded) {
 						console.log(data.succeeded);
-						Router.push('/', undefined, { shallow: true });
+						Router.push('/', undefined, { shallow : false });
 					} else {
 						setError('Story create failed');
 					}
