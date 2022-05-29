@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.vedrane.inkwyl",
+    "sha256_cert_fingerprints":
+    ["AE:AF:DD:A3:98:5C:57:3A:F8:21:FD:8B:B9:67:A1:41:5B:F4:47:D8:FF:2E:BA:11:C4:92:C9:8A:4C:F8:F2:D0"]
+  }
+}]

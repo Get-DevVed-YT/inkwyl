@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f3eb;
+  font-family: 'Roboto Mono', monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.mcontent {
+   margin: 0 0.3rem;
+}
+
+.darkmode {
+   background-color: #7d766d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logoContainer {
+  width: 35%;
+  margin: 4px;
+}
+
+.editor, .story {
+  margin: 2em;
+}
+
+.contest {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 4px;
+  background-color: #ede6d1;
+}
+
+.verified {
+  border: 1px solid black;
+  color: #7293a8;
+  background-color: lightblue;
+}
+
+.comment {
+  border: 2px dashed black;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 2px;
+  background-color: #e6e2d5;
+}
+
+.navbar {
+  word-break: break-word; 
+  padding: 10px;
+  margin: 0;
+  background-color: #858373;
+}
+
+.navbar > a {
+  text-decoration: none;
+}
+
+.logoContainer > div {
+  position: unset !important;
+}
+
+.logo {
+  object-fit: contain;
+  width: 100% !important;
+  height: unset !important;
+  position: relative !important;
+}
