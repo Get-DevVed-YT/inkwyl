@@ -132,9 +132,9 @@ export default function Home({prof, stories, comments, title}) {
 
 
 export async function getServerSideProps(context) {
-  const { userId } = context.query
+  const { username } = context.query
   
-  var link = process.env.BASE_URL+'api/getuser/' + userId;
+  var link = process.env.BASE_URL+'api/getuser/' + username;
   console.log(link)
   const res = await fetch(link)
   const prof = await res.json()
