@@ -97,6 +97,7 @@ export default function Home() {
         <h1>About Inkwyl</h1>
         <p>Inkwyl is a social network made in the interest of authors looking to write and share their stories with the general public. It is also made for readers who want to read new stories from new authors. Whether reader or writer, and no matter what genre you are in to, Inkwyl has something for everyone.</p>
         <p>Inkwyl is created by Ved Rane, and is made possible because of your support.</p>
+        <Link href="https://youtube.com/channel/UCvQgmVqYGXudj-KYtUfjr7A" passHref={true}>YouTube</Link>
       </div>
     </div>
   )
