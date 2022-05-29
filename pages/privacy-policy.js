@@ -55,7 +55,7 @@ export default function Home() {
           </Link>
      </div>
            <div className="navbar">
-        <Link href="/" shallow>
+        <Link href="/">
           Home&nbsp;&#32;
      </Link>
         <Link href="/editor">
@@ -64,13 +64,13 @@ export default function Home() {
         <Link href="/about">
           About&nbsp;&#32;
      </Link>
-        <Link href="/users" shallow>
+        <Link href="/users">
           Users&nbsp;&#32;
      </Link>
 
         {loggedIn && (
           <>
-            <Link shallow href={data.link}>Profile&#32;</Link>
+            <Link href={data.link}>Profile&#32;</Link>
             <a href="/"
               onClick={() => {
                 cookie.remove('token');
