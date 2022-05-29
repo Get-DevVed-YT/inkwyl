@@ -11,7 +11,7 @@ const client = new MongoClient(url, {
 
 function findUserbyName(db, username, callback) {
   const collection = db.collection('users');
-  collection.findOne({userId}, callback);
+  collection.findOne({username}, callback);
 }
 
 export default (req, res) => {
