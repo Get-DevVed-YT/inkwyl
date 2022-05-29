@@ -46,6 +46,12 @@ a {
   background-color: lightblue;
 }
 
+.ql-editor {
+
+white-space: normal!important;
+
+}
+
 .comment {
   border: 2px dashed black;
   border-radius: 10px;
