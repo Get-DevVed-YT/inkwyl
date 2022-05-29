@@ -87,7 +87,7 @@ export default (req, res) => {
         }
         if (!user) {
           var id = v4()
-         var link = "/user/" + id
+         var link = "/user/" + username
           // proceed to Create
           createUser(db, username, email, password, bio, id, link, function(creationResult) {
             if (creationResult.ops.length === 1) {
