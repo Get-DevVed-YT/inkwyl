@@ -87,7 +87,6 @@ export default function Home({ isConnected }) {
           </>
         )}
               <Link href="/tos">TOS&#32;</Link>
-      <Link href="https://youtube.com/channel/UCvQgmVqYGXudj-KYtUfjr7A" passHref={true}>YouTube&#32;</Link>
       </div>
         <br />
         <Link href="/privacy-policy">Read our privacy policy here</Link>
