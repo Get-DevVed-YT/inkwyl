@@ -18,6 +18,7 @@ export default (req, res) => {
     }
 
     if (decoded) {
+      decoded.link = "/user/" + decoded.username;
       res.json(decoded);
       return;
     } else {
