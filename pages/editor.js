@@ -145,7 +145,7 @@ const Editor = () => {
 <Link href="/"><Image src="/logo.svg" layout="fill" objectPosition="top" className="logo" /></Link>
 </div>
    <div className="navbar">
-     <Link href="/" shallow>
+     <Link href="/">
      Home&nbsp;&#32;
      </Link>
      <Link href="/editor">
@@ -154,7 +154,7 @@ const Editor = () => {
       <Link href="/about">
      About&nbsp;&#32;
      </Link>
-     <Link href="/users" shallow>
+     <Link href="/users">
      Users&nbsp;&#32;
      </Link>
              
