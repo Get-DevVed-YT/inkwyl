@@ -160,7 +160,7 @@ const Editor = () => {
              
                 {loggedIn && (
         <>
-        <Link shallow href={data.link}>Profile&#32;</Link>
+        <Link href={data.link}>Profile&#32;</Link>
           <a href="/"
             onClick={() => {
               cookie.remove('token');
