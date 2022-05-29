@@ -148,7 +148,7 @@ const Signup = () => {
           <input type="submit" value="Submit" />
           {signupError && <p style={{ color: 'red' }}>{signupError}</p>}
         </form>
-        <p>Please be aware you can only change these values by emailing <Link href="mailto:getdevved@gmail.com">getdevved@gmail.com</Link>, so please choose carefully. Your bio will read "No bio given" if no bio is specified.</p>
+        <p>Please be aware you can only change these values by emailing <Link href="mailto:inkwyl@gmail.com">inkwyl@gmail.com</Link>, so please choose carefully. Your bio will read "No bio given" if no bio is specified.</p>
         <Link href="/tos">Please read the Terms of Service before signing up</Link>
       </div>
     </div>
