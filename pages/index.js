@@ -90,9 +90,11 @@ export default function Home({ stories, users, comments }) {
      <div class="mcontent">
       {loggedIn && (
         <>
+          <div className="statement">
           <h1>Welcome {data.username}!</h1>
 <h2>We have {stories.length} stories, {comments.length} comments, and {users.length} users.</h2>     
 <Link href="/editor">Write a story</Link> or read some here.
+           </div>
         </>
       )}
       {!loggedIn && (
