@@ -99,9 +99,11 @@ export default function Home({ stories, users, comments }) {
       )}
       {!loggedIn && (
         <>
+        <div className="statement">
         <h1>Welcome!</h1>
         <h2>We have {stories.length} stories, {comments.length} comments, and {users.length} users.</h2>
         <p>Consider logging in or signing up</p>
+        </div>
         </>
       )}
        <div>
