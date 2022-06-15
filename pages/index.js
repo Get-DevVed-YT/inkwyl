@@ -106,7 +106,7 @@ export default function Home({ stories, users, comments }) {
       )}
        <div>
            {stories.map((story) => (
-            <h3><Link shallow href={story.storyLink}>{story.title}</Link> by <Link shallow href={story.userlink}>{story.username}</Link></h3>
+            <h3><Link shallow href={story.storyLink}>{story.title}</Link> by <Link shallow href={story.userlink}>{story.username}</Link></h3><hr/>
         ))}
        </div>
      </div>
